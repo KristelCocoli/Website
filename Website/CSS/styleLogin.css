@@ -1,0 +1,620 @@
+*,html,body
+{
+    margin: 0;
+    padding: 0;
+   
+    
+    
+    
+    
+}
+
+@font-face 
+{
+    src: url(../Fonts/Prototype.ttf);
+    font-family: prototype;
+}
+@font-face
+{
+    src: url(//Fonts/latin_runes_v20.ttf);
+    font-family: latin;
+}
+
+body
+{
+    height: 3000px;
+}
+header
+{
+    height:112px;
+    line-height: 112px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.container .row nav ul
+{
+    margin-left: 0px;
+}
+
+.secondary
+{
+    /*background-color: rgb(36, 42, 44);*/
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url(../Image/db3oqyr-881f27f2-971a-4fc3-a1a5-cbe1fbcf1da0.gif);/*per menune lart ky gif*/
+    opacity: 0.85;
+    width: 100%;
+    box-shadow: 0px 0px 17px 0px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+ul li
+{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: prototype;
+}
+
+header nav
+{
+    float: right;
+}
+
+.Logo img
+{
+    margin-top: -20px;
+}
+
+header nav ul li a
+{
+    padding-right: 30px;
+    font-weight: bold;
+    color:white;
+    transition: all 0.5s ease-in;
+}
+
+header nav ul li a:hover
+{
+    text-decoration: none;
+    color: #7a0875;
+}
+
+.background
+{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../Image/login_big_background.jpg);/*do nderruar */
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+opacity: 1;
+    padding: 300px 0px;
+}
+
+.background a.btn-half
+{
+    background-color: #7a0875;
+    /*background-color: orange;*/
+    color: white;
+    transition: 0.5s ease-in;
+    margin-top: 15px;
+    font-family: prototype;
+}
+
+.background a.btn-half:hover
+{
+    background-color: #7a0875;
+    text-decoration: none;/*pse s e njehh*/
+}
+
+.title h2
+{
+    font-family: prototype;
+    color: white;
+    font-size: 70px;
+    margin-top: -60px;
+
+}
+.title span
+{
+    font-family: prototype;
+    color: rgb(0,121,107);
+
+
+}
+.title p
+{
+    color: white;
+    font-size: 20px;
+    font-family: prototype;
+}
+
+.background a.btn-half
+{
+    width: 200px;
+    height: 50px;
+}
+
+.background a
+{
+    margin-top: 10px;
+    font-size: 24px;
+    color: white;/*per te rregulluar  ngjyren e forget password */
+
+    font-family: prototype;
+}
+
+.intro-area
+{
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+    
+
+}
+.intro-area h2
+{
+    margin-top: -30px;
+    font-family: prototype;
+    font-size: 45px;
+}
+
+.sub-head
+{
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.sub-head:before
+{
+    content:"" ;
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 2px;
+    background-color: #7a0875;
+    
+    z-index: 1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.sub-head:hover:before
+{
+    width:24%;
+    margin-left: -12%;
+}
+.sub-head:after
+{
+    content:"" ;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 1px;
+    background-color: rgb(236, 234, 234);
+}
+
+.sub-head p
+{
+    color: #818181;
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+ 
+.intro-block
+{
+    position: relative;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 80px 30px 40px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0px 0px 0px 0px #7a0875;
+}
+
+.intro-block:hover, .intro-block.active
+{
+    background:#00215f;
+}
+
+.intro-block:hover
+{
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+}
+
+.intro-block .intro-icon
+{
+    position: absolute;
+    top:-31px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block .custom-icon
+{
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    color: white;
+    line-height: 2;
+    background: #00155c;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 10px #7a0875;
+}
+
+.intro-block:hover .custom-icon, .intro-block.active .custom-icon
+{
+    background-color: #7a0875;
+    color:#080146;
+    box-shadow: 0px 0px 0px 10px #7a0875;
+}
+
+.intro-block h3
+{
+    font-size:25px;
+    color: #7a0875;
+    font-weight: 700;
+    font-family: prototype;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+.intro-block:hover h3 , .intro-block:hover p
+{
+    font-size:15px;
+    color:white;
+    
+}
+.intro-block:hover h3
+{
+    font-size: 24px;
+}
+
+.intro-block p
+{
+    text-align: justify;
+    color: rgb(104, 104, 104);
+}
+
+.tit:hover
+{
+    color: #7a0875;
+    transition: .8s ease;
+}
+
+.fullscreen-video
+{
+    position: relative;
+    top: 0;
+    content: "";
+    left: 0;
+    
+
+}
+
+.fullscreen-video
+{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+}
+
+.fullscreen-video video
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-attachment: fixed;
+
+}
+
+.fullscreen-video .content
+{
+    position: absolute;
+    z-index: 1;
+    max-width: 1000px;
+    margin-top: 400px;
+    margin-left: -550px;
+    
+ 
+}
+
+.fullscreen-video .content p
+{
+    font-size: 18px;
+}
+
+
+.fullscreen-video .content h1
+{
+    color: white;
+    font-family: prototype;
+    font-size: 60px;
+    margin-top: -350px;
+}
+
+.fullscreen-video .content:hover h1
+{
+    color: #7a0875;
+    transition: .5s ease;
+}
+
+.fullscreen-video a.btn-half
+{
+    text-decoration: none;
+    background-color: rgb(0,121,107);
+    font-family: prototype;
+    color: white;
+    size: 70px 200px;
+    align-items: center;
+}
+
+.fullscreen-video .content a.btn-half:hover
+{
+    background-color: rgb(0,121,107);
+    transition: 0.6s ease-in;
+}
+
+.fullscreen-video p
+{
+    text-align: left;
+    color: white;
+}
+
+.fullscreen-video .gameplay
+{
+    width: 300px;
+    height: auto;
+    opacity: 0.2;
+    margin-left: -1000px;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.discord-logo-png-transparent
+{
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.test .title 
+{
+    margin-top: 30px;
+    font-family: prototype;
+    font-size: 50px;
+}
+
+.test p
+{
+    font-size: 20px;
+}
+
+.paypalcenter{
+    position: relative;
+    left: 163px;
+    width: 200px;
+  
+    height: 20px;
+}
+.paypalcenter2{
+   position: relative;
+   left: 65px;
+
+    max-width: 100%;
+  
+    height: auto;
+    border-block-color: white;
+}
+
+
+.harta{
+
+    position: relative;
+  
+
+    max-width: 100%;
+  
+    height: 10000px;
+    border-block-color: white;
+
+
+}
+
+
+.fotoIng{
+
+        position: absolute;
+        right: -100px;
+
+        width: 50%;
+        height: 70%;
+        
+        
+}
+
+
+/*Login*/
+
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:670px;
+	position:relative;/*../Image/xhgemi1.jpg*/
+	background:url(../Image/backgroundAbout1.png) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(218, 20, 185, 0.24),0 17px 50px 0 rgba(0,0,0,.19);/*hija poshte */
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+    padding:90px 70px 50px 70px;
+   
+    background: url(../Image/login_bg.png) 
+    
+    
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#7a0875;/*sign in dhe sign up borderi */
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.login-form .group .button{/*ngjyra e butonit */
+    background:#490247;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#ffffff;
+}
+.login-form .group .check:checked + label .icon{/*ngjyra e check icon */
+    background:#490247;
+    border: 2px solid rgb(255, 255, 255);
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+    text-align:center;
+    
+}
+
+#forgot{
+    background-color: #490247;
+}
